@@ -1,0 +1,32 @@
+module.exports = {
+  env: {
+    es6: true,
+    browser: true,
+    es2021: true,
+  },
+  extends: ['prettier', 'airbnb'],
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': 'error',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'comma-dangle': 'off',
+    'function-paren-newline': 'off',
+    'object-curly-newline': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'import/prefer-default-export': 'off',
+    'react/jsx-curly-newline': 'off',
+    'no-confusing-arrow': ['error', { allowParens: true }],
+    'operator-linebreak': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'array-callback-return': 'off',
+    'arrow-body-style': 'off',
+    'consistent-return': 'off',
+  },
+};
